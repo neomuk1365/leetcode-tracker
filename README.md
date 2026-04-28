@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# 🚀 LeetCode Tracker – AI Developer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application that tracks daily **LeetCode accepted problems** and visualizes them on an aesthetic calendar with color-coded insights.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌐 Live Demo
 
-### `npm start`
+* 🔗 Primary: https://ravi-leetcode-tracker.vercel.app/
+* 🔗 Alternate: https://leetcode-tracker-blue.vercel.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+* 📅 Full-screen aesthetic calendar (like Microsoft Teams)
+* ✅ Tracks **daily accepted LeetCode problems**
+* 🎨 Color-coded performance:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  * 🔴 0 → No progress
+  * 🟡 1–3 → Average
+  * 🟢 4+ → Strong performance
+* ⚡ Real-time data from LeetCode (via backend API)
+* 🧊 Glassmorphism UI + smooth animations
+* 🌌 Particle background for modern AI feel
+* 🧠 Skills section with interactive links
+* 📱 Fully responsive
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![FullCalendar](https://img.shields.io/badge/FullCalendar-3174ad?style=for-the-badge)
+![Framer Motion](https://img.shields.io/badge/Framer--Motion-black?style=for-the-badge&logo=framer)
+![tsparticles](https://img.shields.io/badge/tsparticles-0ea5e9?style=for-the-badge)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Backend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-black?style=for-the-badge&logo=express)
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Vercel](https://img.shields.io/badge/Vercel-black?style=for-the-badge&logo=vercel)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+
+## 🧠 How It Works
+
+1. Backend fetches recent submissions using **LeetCode GraphQL API**
+2. Filters only **Accepted submissions**
+3. Groups them by date
+4. Sends data to frontend
+5. Frontend displays results on a **calendar UI**
+
+---
+
+
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the repository
+
+```
+git clone https://github.com/YOUR_USERNAME/leetcode-tracker.git
+cd leetcode-tracker
+```
+
+---
+
+### 2️⃣ Setup Backend
+
+```
+cd backend
+npm install
+node server.js
+```
+
+---
+
+### 3️⃣ Setup Frontend
+
+```
+cd frontend
+npm install
+npm start
+```
+
+---
+
+## 🔥 Future Improvements
+
+* 📊 Streak tracking system
+* 🔥 GitHub-style heatmap
+* 📈 Weekly/monthly analytics
+* 🔐 User authentication
+* 🌍 Multi-user support
+
+---
+
+## 👨‍💻 Author
+
+**Ravi Ranjan**
+AI • ML • Full Stack Developer
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project:
+
+* ⭐ Star the repo
+* 🍴 Fork it
+* 📢 Share it
+
+---
+
+## 📜 License
+
+This project is open-source and free to use.
