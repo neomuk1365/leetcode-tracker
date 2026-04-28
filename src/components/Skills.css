@@ -1,0 +1,19 @@
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills a {
+  padding: 10px 18px;
+  background: #1e293b;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.skills a:hover {
+  background: #0ea5e9;
+}

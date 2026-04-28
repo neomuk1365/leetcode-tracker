@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* HERO */
+.hero {
+  height: 100vh;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* GLASS EFFECT */
+.glass {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* HERO CONTENT */
+.hero-content {
+  position: relative;
+  top: 30%;
+  text-align: center;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+/* AI BACKGROUNDS */
+
+/* ABOUT (coder working) */
+.about-bg {
+  background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+}
+
+/* SKILLS (robot thinking) */
+.skills-bg {
+  background-image: url("https://images.unsplash.com/photo-1677442136019-21780ecad995");
+}
+
+/* TRACKER (AI tech) */
+.tracker-bg {
+  background-image: url("https://images.unsplash.com/photo-1555949963-aa79dcee981c");
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.skill-card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+/* CALENDAR */
+.calendar {
+  padding: 20px;
 }

@@ -1,0 +1,19 @@
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-bg {
+  background-image: url("https://images.unsplash.com/photo-1682686580391-615b7f28d2e3");
+}
+
+.overlay {
+  background: rgba(0,0,0,0.65);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
