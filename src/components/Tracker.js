@@ -6,29 +6,29 @@ export default function Tracker() {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    // 🔥 Dummy Data (no backend needed)
-    const data = {
-      "2026-04-05": 3,
-      "2026-04-06": 1,
-      "2026-04-07": 5,
-      "2026-04-10": 2,
-      "2026-04-12": 6
-    };
+    const username = "neomuk1365"; // 🔥 apna username yaha rakho
 
-    const formatted = Object.keys(data).map(date => ({
-      title: `${data[date]} ✅`,
-      date: date,
-      count: data[date]
-    }));
+    fetch(`https://leetcode-backend-lbx6.onrender.com/leetcode/${username}`)
+      .then((res) => res.json())
+      .then((data) => {
+        const formatted = Object.keys(data).map((date) => ({
+          title: `${data[date]} ✅`,
+          date: date,
+          count: data[date],
+        }));
 
-    setEvents(formatted);
+        setEvents(formatted);
+      })
+      .catch((err) => {
+        console.error("Error fetching data:", err);
+      });
   }, []);
 
   // 🎨 Color logic
   const getColor = (count) => {
-    if (count === 0) return "#ef4444";   // red
-    if (count <= 3) return "#facc15";    // yellow
-    return "#22c55e";                    // green
+    if (!count || count === 0) return "#ef4444";   // red
+    if (count <= 3) return "#facc15";              // yellow
+    return "#22c55e";                              // green
   };
 
   return (
@@ -42,7 +42,7 @@ export default function Tracker() {
           events={events}
           height="70vh"
 
-          // 🔥 CUSTOM UI INSIDE CALENDAR
+          // 🔥 Custom UI for each day
           eventContent={(info) => {
             const count = info.event.extendedProps.count;
 
@@ -52,10 +52,12 @@ export default function Tracker() {
                   backgroundColor: getColor(count),
                   borderRadius: "6px",
                   padding: "4px",
-                  textAlign: "center"
+                  textAlign: "center",
+                  color: "#000",
+                  fontWeight: "bold"
                 }}
               >
-                <b>{count} ✅</b>
+                {count} ✅
               </div>
             );
           }}
